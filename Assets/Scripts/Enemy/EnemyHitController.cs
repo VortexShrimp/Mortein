@@ -11,10 +11,8 @@ public class EnemyHitController : MonoBehaviour
     [SerializeField] private int maxHealth;
     private int _currentHealth;
 
-
-    [Tooltip("The prefab to spawn when an enemy dies.")]
+    [SerializeField] private GameObject hitMarkerPrefab;
     [SerializeField] private GameObject soulPrefab;
-    [Tooltip("How long should the soul linger on the map?")]
     [SerializeField] private float soulExpireTime;
 
     private void Start()
@@ -38,6 +36,8 @@ public class EnemyHitController : MonoBehaviour
 
             // Destroy the bullet.
             Destroy(other.gameObject);
+
+            Destroy(Instantiate(hitMarkerPrefab, other.transform.position, Quaternion.identity), 0.2f);
         }
         else if (other.CompareTag("ShotgunBullet"))
         {
@@ -50,6 +50,8 @@ public class EnemyHitController : MonoBehaviour
 
                 onEnemyDeath?.Invoke();
             }
+
+            Destroy(Instantiate(hitMarkerPrefab, other.transform.position, Quaternion.identity), 0.2f);
         }
     }
 }

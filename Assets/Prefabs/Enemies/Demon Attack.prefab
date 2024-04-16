@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 5
+  hitMarkerPrefab: {fileID: 1165294136127039040, guid: ff4f83bc991eb9b4ebe5af9d705a5124, type: 3}
   soulPrefab: {fileID: 3174011875889215863, guid: b8d7ca3aacdae254c932dfe369945b36, type: 3}
   soulExpireTime: 30
 --- !u!114 &3881354261267729877

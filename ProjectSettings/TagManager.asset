@@ -50,12 +50,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Ground
+  - name: Map
     uniqueID: 747840737
     locked: 0
-  - name: Ground 2
+  - name: Ground
     uniqueID: 809914989
     locked: 0
   - name: Game
     uniqueID: 1793311
+    locked: 0
+  - name: Post
+    uniqueID: 3841618627
     locked: 0
