@@ -1755,7 +1755,6 @@ GameObject:
   - component: {fileID: 834266579}
   - component: {fileID: 834266582}
   - component: {fileID: 834266581}
-  - component: {fileID: 834266580}
   m_Layer: 5
   m_Name: Instruction Text
   m_TagString: Untagged
@@ -1782,18 +1781,6 @@ RectTransform:
   m_AnchoredPosition: {x: -100, y: 483.69}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &834266580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834266578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3dd1c61a254c9b458b4b433c7b60cb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &834266581
 MonoBehaviour:
   m_ObjectHideFlags: 0
