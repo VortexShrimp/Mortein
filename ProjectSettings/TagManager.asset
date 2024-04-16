@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ArrowBullet
+  - DemonBullet
+  - EnemyBullet
+  - Bullet
+  - ShotgunBullet
+  - Red Circle
+  - Green Circle
+  - Blue Circle
+  - Purple Circle
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ground
+  - Water
+  - UI
+  - Game
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 747840737
+    locked: 0
+  - name: Ground 2
+    uniqueID: 809914989
+    locked: 0
+  - name: Game
+    uniqueID: 1793311
+    locked: 0

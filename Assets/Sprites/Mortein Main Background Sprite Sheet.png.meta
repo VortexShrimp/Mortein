@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: 5c04a850d5bf489488c25d4b8b396cf5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mortein Main Background Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6148
+        width: 3074
+        height: 3074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f5de88f15c94745a7ffc3e4f1ce830
+      internalID: 267686279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mortein Main Background Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 3074
+        y: 6148
+        width: 3074
+        height: 3074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d792710b2b147441bc9e66fd0cebe5c
+      internalID: -853528394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mortein Main Background Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 6148
+        y: 6148
+        width: 3074
+        height: 3074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e38524300560442b2c5cea833da434
+      internalID: 424756955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mortein Main Background Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 9222
+        y: 6148
+        width: 3074
+        height: 3074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152c48ff69aebb447b12cc188ae14852
+      internalID: -1370148112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mortein Main Background Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 12296
+        y: 6148
+        width: 3074
+        height: 3074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7dde400afea4141b9acb41e65f4cc1
+      internalID: -1750321075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mortein Main Background Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3074
+        width: 3074
+        height: 3074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c265a6e6deb324c9a842d4f77f7747
+      internalID: -32344817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mortein Main Background Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3074
+        y: 3074
+        width: 3074
+        height: 3074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959d0583c4402a940b001fddeb30520c
+      internalID: 806964735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mortein Main Background Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 6148
+        y: 3074
+        width: 3074
+        height: 3074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3a922da2a22fc4191698a9b850f6f3
+      internalID: -1193894905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mortein Main Background Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 9222
+        y: 3074
+        width: 3074
+        height: 3074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d8eec46b713a6409d55961f11aa328
+      internalID: 1677221641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mortein Main Background Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 12296
+        y: 3074
+        width: 3074
+        height: 3074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf452033e2595484b9c6f61a67786ffb
+      internalID: -575974792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mortein Main Background Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3074
+        height: 3074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1688cadf233fea4f86a1f1315092ae4
+      internalID: 1243839436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mortein Main Background Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3074
+        y: 0
+        width: 3074
+        height: 3074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f8a049221a5484394a972594665ede
+      internalID: -23479638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mortein Main Background Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 6148
+        y: 0
+        width: 3074
+        height: 3074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985c842ea1f925a4ca1a1e9d279c7953
+      internalID: -961762895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mortein Main Background Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 9222
+        y: 0
+        width: 3074
+        height: 3074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b7954018d5d1c42a46dae84e4a08ee
+      internalID: 190487473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mortein Main Background Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 12296
+        y: 0
+        width: 3074
+        height: 3074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5ed401fefeb7d458880a36f671bd92
+      internalID: -2061872763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Mortein Main Background Sprite Sheet_0: 267686279
+      Mortein Main Background Sprite Sheet_1: -853528394
+      Mortein Main Background Sprite Sheet_10: 1243839436
+      Mortein Main Background Sprite Sheet_11: -23479638
+      Mortein Main Background Sprite Sheet_12: -961762895
+      Mortein Main Background Sprite Sheet_13: 190487473
+      Mortein Main Background Sprite Sheet_14: -2061872763
+      Mortein Main Background Sprite Sheet_2: 424756955
+      Mortein Main Background Sprite Sheet_3: -1370148112
+      Mortein Main Background Sprite Sheet_4: -1750321075
+      Mortein Main Background Sprite Sheet_5: -32344817
+      Mortein Main Background Sprite Sheet_6: 806964735
+      Mortein Main Background Sprite Sheet_7: -1193894905
+      Mortein Main Background Sprite Sheet_8: 1677221641
+      Mortein Main Background Sprite Sheet_9: -575974792
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
