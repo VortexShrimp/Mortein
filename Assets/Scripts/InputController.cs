@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 
+/// <summary>
+/// Used for controlling the summoning circles.
+/// TODO: Rename this?
+/// </summary>
 public class InputController : MonoBehaviour
 {
     [SerializeField] GameObject morteinPrefab;
@@ -15,19 +14,19 @@ public class InputController : MonoBehaviour
     public delegate void NewPlayerAnimationHandler();
     public static event NewPlayerAnimationHandler onNewPlayerAnimation;
 
-   private void FixedUpdate() 
-   {
+    private void FixedUpdate() 
+    {
+        // Player is in the summoning zone.
         if (playerInZone)
         {
-           /// GameManager.Instance.instructionText.enabled = true;
-
             if (Input.GetKey(KeyCode.E))
             {
                 if (GameManager.Instance.playerSoulCount >= GetGunPrice())
                 {
                     GameManager.Instance.playerSoulCount -= GetGunPrice();
 
-                    var newPlayer = Instantiate(morteinPrefab,GameManager.Instance.playerPos, Quaternion.identity);
+                    // Spawn the new player animation sprite.
+                    var newPlayer = Instantiate(morteinPrefab, GameManager.Instance.playerPos, Quaternion.identity);
                     GameManager.Instance.currentPlayer = newPlayer;
 
                     if (oldPlayer != null)
@@ -39,14 +38,10 @@ public class InputController : MonoBehaviour
                 }
             }
         }
-        else
-        {
-           // GameManager.Instance.instructionText.enabled = false;
-        }
-   }
+    }
 
-   private void OnTriggerEnter2D(Collider2D other)
-   {
+    private void OnTriggerEnter2D(Collider2D other)
+    {
         if (other.CompareTag("Player"))
         {
             oldPlayer = other.gameObject;
@@ -55,32 +50,33 @@ public class InputController : MonoBehaviour
             GameManager.Instance.instructionText.text = $"Press \"E\" to summon {gunName} for {GetGunPrice()} souls.";
             GameManager.Instance.instructionText.enabled = true;
         }
-   }
+    }
 
-   private void OnTriggerExit2D(Collider2D other)
-   {
+    private void OnTriggerExit2D(Collider2D other)
+    {
         if (other.CompareTag("Player"))
         {
             playerInZone = false;
             GameManager.Instance.instructionText.enabled = false;
         }
-   }
-
-   private int GetGunPrice()
-   {
-    switch (tag)
-    {
-        case "Green Circle":
-            return 35;
-        case "Purple Circle":
-            return 70;
-        case "Red Circle":
-            return 40;
-        case "Blue Circle":
-            return 20;
-
-        default:
-            return 0;
     }
-   }
+
+    // Should probably use an enum for this.
+    private int GetGunPrice()
+    {
+        switch (gunName)
+        {
+            case "SMG":
+                return 35;
+            case "LMG":
+                return 70;
+            case "SHOTGUN":
+                return 40;
+            case "ASSUALT RIFLE":
+                return 20;
+
+            default:
+                return 0;
+        }
+    }
 }
