@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SMG Bullet
+  m_Name: Demon Wave Animation
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,13 +21,11 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 2049768230, guid: fee44bc9332b2694882b4f46fd837ac2, type: 3}
+      value: {fileID: -208244817, guid: 1339f2b09511d12459c6615bab2f3a2b, type: 3}
     - time: 0.083333336
-      value: {fileID: -846374935, guid: fee44bc9332b2694882b4f46fd837ac2, type: 3}
+      value: {fileID: -1935047710, guid: 1339f2b09511d12459c6615bab2f3a2b, type: 3}
     - time: 0.16666667
-      value: {fileID: -720717341, guid: fee44bc9332b2694882b4f46fd837ac2, type: 3}
-    - time: 0.25
-      value: {fileID: -751431101, guid: fee44bc9332b2694882b4f46fd837ac2, type: 3}
+      value: {fileID: 920095892, guid: 1339f2b09511d12459c6615bab2f3a2b, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -50,16 +48,15 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 2049768230, guid: fee44bc9332b2694882b4f46fd837ac2, type: 3}
-    - {fileID: -846374935, guid: fee44bc9332b2694882b4f46fd837ac2, type: 3}
-    - {fileID: -720717341, guid: fee44bc9332b2694882b4f46fd837ac2, type: 3}
-    - {fileID: -751431101, guid: fee44bc9332b2694882b4f46fd837ac2, type: 3}
+    - {fileID: -208244817, guid: 1339f2b09511d12459c6615bab2f3a2b, type: 3}
+    - {fileID: -1935047710, guid: 1339f2b09511d12459c6615bab2f3a2b, type: 3}
+    - {fileID: 920095892, guid: 1339f2b09511d12459c6615bab2f3a2b, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.33333334
+    m_StopTime: 0.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
