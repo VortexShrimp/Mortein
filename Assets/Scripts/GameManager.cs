@@ -1,5 +1,4 @@
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 class GameManager : MonoBehaviour
@@ -21,7 +20,6 @@ class GameManager : MonoBehaviour
     public int currentEnemies = 0;
 
     public int maxPickups = 4;
-
     public int playerSoulCount = 0;
 
     public TextMeshProUGUI instructionText;
@@ -60,6 +58,7 @@ class GameManager : MonoBehaviour
     {
         EnemyHitController.onEnemyHit += OnEnemyHit;
         PlayerHealthController.onPlayerHealthDecrease += OnPlayerHealthDecrease;
+        InputController.onNewPlayerAnimation += OnNewPlayerAnimation;
 
         SoulPickup.onSoulPickedUp += OnSoulPickedUp;
         HealthPickup.onHealthPickedUp += OnHealthPickedUp;
@@ -69,6 +68,7 @@ class GameManager : MonoBehaviour
     {
         EnemyHitController.onEnemyHit -= OnEnemyHit;
         PlayerHealthController.onPlayerHealthDecrease -= OnPlayerHealthDecrease;
+        InputController.onNewPlayerAnimation -= OnNewPlayerAnimation;
 
         SoulPickup.onSoulPickedUp -= OnSoulPickedUp;
         HealthPickup.onHealthPickedUp -= OnHealthPickedUp;
@@ -96,22 +96,11 @@ class GameManager : MonoBehaviour
         RefreshHearts();
     }
 
-    private void RefreshHearts()
+    // Player's animation has changed due to purchasing a weapon.
+    // Update the text to display the correct amount of souls.
+    private void OnNewPlayerAnimation()
     {
-        halfHeart1.SetActive(playerHealth < 1 ? false : true);
-        heart1.SetActive(playerHealth < 2 ? false : true);
-
-        halfHeart2.SetActive(playerHealth < 3 ? false : true);
-        heart2.SetActive(playerHealth < 4 ? false : true);
-
-        halfHeart3.SetActive(playerHealth < 5 ? false : true);
-        heart3.SetActive(playerHealth < 6 ? false : true);
-
-        halfHeart4.SetActive(playerHealth < 7 ? false : true);
-        heart4.SetActive(playerHealth < 8 ? false : true);
-
-        halfHeart5.SetActive(playerHealth < 9 ? false : true);
-        heart5.SetActive(playerHealth < 10 ? false : true);
+        soulsText.text = playerSoulCount.ToString();
     }
 
     private void OnSoulPickedUp()
@@ -129,5 +118,23 @@ class GameManager : MonoBehaviour
         }
 
         RefreshHearts();
+    }
+
+    private void RefreshHearts()
+    {
+        halfHeart1.SetActive(playerHealth < 1 ? false : true);
+        heart1.SetActive(playerHealth < 2 ? false : true);
+
+        halfHeart2.SetActive(playerHealth < 3 ? false : true);
+        heart2.SetActive(playerHealth < 4 ? false : true);
+
+        halfHeart3.SetActive(playerHealth < 5 ? false : true);
+        heart3.SetActive(playerHealth < 6 ? false : true);
+
+        halfHeart4.SetActive(playerHealth < 7 ? false : true);
+        heart4.SetActive(playerHealth < 8 ? false : true);
+
+        halfHeart5.SetActive(playerHealth < 9 ? false : true);
+        heart5.SetActive(playerHealth < 10 ? false : true);
     }
 }
