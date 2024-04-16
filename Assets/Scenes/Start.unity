@@ -304,7 +304,7 @@ Transform:
   m_GameObject: {fileID: 139777069}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.97, y: -2.71, z: 0}
+  m_LocalPosition: {x: -0.27, y: 2.21, z: 0}
   m_LocalScale: {x: 7.44515, y: 7.44515, z: 7.44515}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -389,7 +389,7 @@ Transform:
   m_GameObject: {fileID: 633307597}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.22, y: -0.62, z: 0}
+  m_LocalPosition: {x: -22.13, y: 1.87, z: 0}
   m_LocalScale: {x: 2.3785477, y: 2.3785477, z: 2.3785477}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -537,7 +537,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 672, y: -150}
+  m_AnchoredPosition: {x: 69, y: -310}
   m_SizeDelta: {x: 445, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &734363133
@@ -810,8 +810,8 @@ Camera:
   m_GameObject: {fileID: 1185200980}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1284,8 +1284,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 648, y: 90}
-  m_SizeDelta: {x: 445, y: 300}
+  m_AnchoredPosition: {x: 69, y: -167}
+  m_SizeDelta: {x: 534.0819, y: 419.0846}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1832359653
 MonoBehaviour:
