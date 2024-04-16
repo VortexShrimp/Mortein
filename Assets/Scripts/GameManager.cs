@@ -56,7 +56,7 @@ class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
-        EnemyHitController.onEnemyHit += OnEnemyHit;
+        EnemyHitController.onEnemyDeath += OnEnemyDeath;
         PlayerHealthController.onPlayerHealthDecrease += OnPlayerHealthDecrease;
         InputController.onNewPlayerAnimation += OnNewPlayerAnimation;
 
@@ -66,7 +66,7 @@ class GameManager : MonoBehaviour
 
     private void OnDisable()
     {
-        EnemyHitController.onEnemyHit -= OnEnemyHit;
+        EnemyHitController.onEnemyDeath -= OnEnemyDeath;
         PlayerHealthController.onPlayerHealthDecrease -= OnPlayerHealthDecrease;
         InputController.onNewPlayerAnimation -= OnNewPlayerAnimation;
 
@@ -74,7 +74,7 @@ class GameManager : MonoBehaviour
         HealthPickup.onHealthPickedUp -= OnHealthPickedUp;
     }
 
-    private void OnEnemyHit()
+    private void OnEnemyDeath()
     {
         // Decrease the current amount of enemies.
         currentEnemies--;

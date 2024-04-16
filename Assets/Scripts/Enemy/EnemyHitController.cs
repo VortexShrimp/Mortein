@@ -1,40 +1,55 @@
 using UnityEngine;
 
+/// <summary>
+/// Handles collisions made to enemies.
+/// </summary>
 public class EnemyHitController : MonoBehaviour
 {
-    public delegate void EnemyHitHandler();
-    public static event EnemyHitHandler onEnemyHit;
+    public delegate void EnemyDeathHandler();
+    public static event EnemyDeathHandler onEnemyDeath;
+
+    [SerializeField] private int maxHealth;
+    private int _currentHealth;
 
 
-    [SerializeField] private GameObject enemyDropPrefab;
-    [SerializeField] private float dropExpireTime;
+    [Tooltip("The prefab to spawn when an enemy dies.")]
+    [SerializeField] private GameObject soulPrefab;
+    [Tooltip("How long should the soul linger on the map?")]
+    [SerializeField] private float soulExpireTime;
+
+    private void Start()
+    {
+        _currentHealth = maxHealth;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Bullet"))
         {
-            // Destroy the enemy.
-            Destroy(gameObject);
-            onEnemyHit?.Invoke();
+            _currentHealth -= 1;
+
+            if (_currentHealth <= 0)
+            {
+                Destroy(gameObject);
+                Destroy(Instantiate(soulPrefab, transform.position, Quaternion.identity), soulExpireTime);
+
+                onEnemyDeath?.Invoke();
+            }
 
             // Destroy the bullet.
             Destroy(other.gameObject);
-
-            var enemyDrop = Instantiate(enemyDropPrefab, transform.position, Quaternion.identity);
-            Destroy(enemyDrop, dropExpireTime);
         }
-
-        if (other.CompareTag("ShotgunBullet"))
+        else if (other.CompareTag("ShotgunBullet"))
         {
-            // Destroy the enemy.
-            Destroy(gameObject);
-            onEnemyHit?.Invoke();
+            _currentHealth -= 5;
 
-            // Destroy the bullet.
-            
+            if (_currentHealth <= 0)
+            {
+                Destroy(gameObject);
+                Destroy(Instantiate(soulPrefab, transform.position, Quaternion.identity), soulExpireTime);
 
-            var enemyDrop = Instantiate(enemyDropPrefab, transform.position, Quaternion.identity);
-            Destroy(enemyDrop, dropExpireTime);
+                onEnemyDeath?.Invoke();
+            }
         }
     }
 }

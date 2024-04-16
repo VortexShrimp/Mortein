@@ -78,7 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1793311
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1376894416, guid: e3526d5cc08f7f449b60a7d92d55092e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -196,8 +196,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c468d0dab70924699a958dec5cda55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDropPrefab: {fileID: 3174011875889215863, guid: b8d7ca3aacdae254c932dfe369945b36, type: 3}
-  dropExpireTime: 20
+  maxHealth: 3
+  soulPrefab: {fileID: 3174011875889215863, guid: b8d7ca3aacdae254c932dfe369945b36, type: 3}
+  soulExpireTime: 30
 --- !u!114 &1175017030859595015
 MonoBehaviour:
   m_ObjectHideFlags: 0
